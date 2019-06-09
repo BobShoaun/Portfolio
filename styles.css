@@ -1,0 +1,84 @@
+h1 {
+	color: rgb(49, 155, 182);
+}
+
+h2 {
+	color: bisque
+}
+
+body {
+	font-family: Roboto, Arial, Impact;
+	color: white;
+	background: rgb(42, 42, 44);
+	margin: 0;
+	padding: 0;
+}
+
+button {
+	background: brown;
+	border: none;
+	color: white;
+}
+
+header {
+	background: bisque;
+	padding: 20px 40px;
+}
+
+section {
+	padding: 10px 40px;
+}
+
+.nav {
+	color: black;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nav li {
+	display: inline-block;
+	margin: 10px 20px;
+}
+
+.nav a {
+	text-decoration: none;
+}
+
+.nav a:hover {
+	text-decoration: underline;
+}
+
+.pic {
+	background-image: url("Images/Photo\ V2.jpg");
+	background-size: 200px;
+	background-repeat: no-repeat;
+	text-indent: -9999999px;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 5px solid rgb(49, 155, 182);
+}
+
+.gallery {
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+	color: grey;
+}
+
+.gallery figure {
+	width: 300px;
+	margin: auto;
+}
+
+.gallery figure img {
+	width: 100%;
+	box-shadow: black 20px 20px 5px;
+}
+
+footer {
+	padding: 40px;
+	background: gray;
+	text-align: center;
+}
