@@ -15,10 +15,14 @@ body {
 }
 
 button {
-	background: brown;
+	background: rgb(49, 155, 182);
 	border: none;
+	width: 100px;
+	height: 30px;
 	color: white;
 }
+
+/* HEADER */
 
 header {
 	background: bisque;
@@ -28,6 +32,8 @@ header {
 section {
 	padding: 10px 40px;
 }
+
+/* NAVIGATION BAR */
 
 .nav {
 	color: black;
@@ -39,10 +45,14 @@ section {
 .nav li {
 	display: inline-block;
 	margin: 10px 20px;
+	
 }
 
 .nav a {
 	text-decoration: none;
+	color: black;
+	background: gray;
+	padding: 5px 10px;
 }
 
 .nav a:hover {
@@ -51,24 +61,44 @@ section {
 
 .pic {
 	background-image: url("Images/Photo\ V2.jpg");
-	background-size: 200px;
+	background-size: 100px;
 	background-repeat: no-repeat;
 	text-indent: -9999999px;
-	width: 200px;
-	height: 200px;
+	width: 100px;
+	height: 100px;
 	border-radius: 50%;
 	border: 5px solid rgb(49, 155, 182);
 }
 
+/* RESPONSIVE RULES FOR NAV BAR */
+header .mobile {
+	display: none;
+}
+
+@media screen and (max-width: 700px) {
+	header .desktop {
+		display: none;
+	}
+	header .pic {
+		display: block;
+	}
+	header .mobile {
+		display: inline-block;	 
+	}
+}
+
+/* PROJECT GALLERY */
+
 .gallery {
-	padding: 10px;
+	padding: 20px;
 	display: flex;
 	flex-direction: row;
-	color: grey;
+	flex-wrap: wrap;
+	color: gray;
 }
 
 .gallery figure {
-	width: 300px;
+	width: 250px;
 	margin: auto;
 }
 
@@ -76,6 +106,8 @@ section {
 	width: 100%;
 	box-shadow: black 20px 20px 5px;
 }
+
+/* FOOTER */
 
 footer {
 	padding: 40px;
